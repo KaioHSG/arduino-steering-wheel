@@ -1,6 +1,6 @@
 //* WRITTEN BY KAIO *
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
-//!!! Requires libraries: Arduino Joystick Library (MHeironimus) and Encoder (PaulStoffregen) !!!
+//!!! Requires libraries: ArduinoJoystickLibrary (MHeironimus) and Encoder (PaulStoffregen) !!!
 //-----------------------------------------------------------------------------------------------------------------------------------------------------
 //Use pins 0 and 1 to turn on the encoder, the remtant is configured as buttons.
 //Use pin A0, A1 and A2 to connect the pedals, the relay is not configured.
