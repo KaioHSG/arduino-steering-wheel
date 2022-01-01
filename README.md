@@ -1,6 +1,6 @@
 # ArduinoSteeringWheel
 
-* WRITTEN BY KAIO *
+* WRITTEN BY KAIO
 
 !!! Requires libraries: Arduino Joystick Library (MHeironimus) and Encoder (PaulStoffregen) !!!
 
