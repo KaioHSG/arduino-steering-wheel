@@ -6,11 +6,11 @@
 //Use pin A0, A1 and A2 to connect the pedals, the relay is not configured.
 //Load the code for your arduino and wait for it to load, open the serial monitor and make a complete turn on the steering wheel, the number shown will be the number of pulses.
 //Change "5750" in "const int pulses = 5750;" to your encoder pulses.
-//Change "3" in "const int pulseLimit = 3;" to change the amount of turns of the steering wheel (3 = 1080º, 2.5 = 900º).
+//Change "3" in "const int turns = 3;" to change the amount of turns of the steering wheel (3 = 1080º, 2.5 = 900º).
 //Load the code again and be happy! =D
 
 const int pulses = 5750;
-const int pulseLimit = 3;
+const int turns = 3;
 
 #include "Joystick.h"
 #include "Encoder.h"
@@ -38,7 +38,7 @@ void setup() {
   pinMode(12, INPUT_PULLUP);
   pinMode(13, INPUT_PULLUP);
   Joystick.begin();
-  Joystick.setXAxisRange(0, pulses*pulseLimit);
+  Joystick.setXAxisRange(0, pulses*turns);
   Joystick.setRxAxisRange(0, 1023);
   Joystick.setRyAxisRange(0, 1023);
   Joystick.setRzAxisRange(0, 1023);
@@ -51,7 +51,7 @@ void loop() {
   Serial.println(myEnc.read());
   for(int i = 0; i <= 11; i++){
     Serial.println();}
-  Joystick.setXAxis (myEnc.read()+((pulses*pulseLimit)/2));
+  Joystick.setXAxis (myEnc.read()+((pulses*turns)/2));
   Joystick.setRxAxis (analogRead(A0));
   Joystick.setRyAxis (analogRead(A1));
   Joystick.setRzAxis (analogRead(A2));
