@@ -6,7 +6,7 @@
 //Use pin A0, A1 and A2 to connect the pedals, the relay is not configured.
 //Load the code for your arduino and wait for it to load, open the serial monitor and make a complete turn on the steering wheel, the number shown will be the number of pulses.
 //Change "5750" in "const int pulses = 5750;" to your encoder pulses.
-//Change "3" in "const int turns = 3;" to change the amount of turns of the steering wheel (3 = 1080º, 2.5 = 900º).
+//Change "3" in "const int turns = 3;" to change the amount of turns of the steering wheel (3 = 1080°, 2.5 = 900°).
 //Load the code again and be happy! =D
 
 const int pulses = 5750;
