@@ -24,7 +24,8 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
   false, false,
   false, false, false);
 
-void setup() {
+void setup(){
+  Serial.begin(50);
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
@@ -44,8 +45,7 @@ void setup() {
   Joystick.setRzAxisRange(0, 1023);
 }
 
-void loop() {
-  delay(50);
+void loop(){
   Serial.println("");
   Serial.print("Pulses:     ");
   Serial.println(myEnc.read());
