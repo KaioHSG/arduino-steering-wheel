@@ -3,6 +3,6 @@ Using just an encoder, a potentiometer for each pedal and an Arduino (only Leona
 
 * Requires libraries:
 
-ArduinoJoystickLibrary by MHeironimus (https://github.com/MHeironimus/ArduinoJoystickLibrary).
+[ArduinoJoystickLibrary](https://github.com/MHeironimus/ArduinoJoystickLibrary) by MHeironimus.
 
-Encoder by PaulStoffregen (https://github.com/PaulStoffregen/Encoder).
+[Encoder](https://github.com/PaulStoffregen/Encoder) by PaulStoffregen.
